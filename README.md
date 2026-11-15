@@ -49,7 +49,7 @@ Dedicated credential cards detailing core competencies:
 Run a local server from this directory:
 
 ```bash
-cd /mnt/d/Codes/AntiGravity/yadvendra-wagh.github.io-main/portfolio-v2
+cd "PATH"
 python3 -m http.server 8080
 ```
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-liquid-theme="cyan">
 
 <head>
   <meta charset="utf-8" />
@@ -7,7 +7,7 @@
   <title>Yadvendra Wagh — Data Engineer</title>
   <meta name="description"
     content="Portfolio of Yadvendra Wagh, Data Engineer with 2+ years of experience in Apache Spark, PySpark, Databricks Lakehouse, and Cloud Architecture." />
-  <meta name="theme-color" content="#080708" />
+  <meta name="theme-color" content="#030712" />
 
   <!-- Google Fonts: Manrope & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,6 +53,13 @@
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
+            <!-- Interactive Liquid Theme Selector -->
+            <div class="theme-switcher-capsule" role="group" aria-label="Liquid Theme Switcher">
+              <button class="theme-pill-btn active" data-theme="cyan" title="Cyan Ocean" aria-label="Cyan Ocean Theme">💧</button>
+              <button class="theme-pill-btn" data-theme="amethyst" title="Amethyst Aurora" aria-label="Amethyst Aurora Theme">🔮</button>
+              <button class="theme-pill-btn" data-theme="mercury" title="Liquid Mercury" aria-label="Liquid Mercury Theme">🪞</button>
+              <button class="theme-pill-btn" data-theme="emerald" title="Cyber Lagoon" aria-label="Cyber Lagoon Theme">🌿</button>
+            </div>
           </header>
 
           <!-- Hero Content: Left Details & Right Portrait -->
@@ -321,7 +328,7 @@
         <div class="project-list">
           <!-- Project 01 -->
           <a href="https://huggingface.co/spaces/Yadvendra/Gemini_Pro_Chatbot_with_Image_Caption_Generation"
-            target="_blank" rel="noopener noreferrer" class="project-row">
+            target="_blank" rel="noopener noreferrer" class="project-row" data-preview="images/gemini_pro_chatbot.jpg">
             <span class="p-number">01</span>
             <div class="p-title-wrap">
               <span class="p-title">Gemini Pro Multimodal Chatbot</span>
@@ -341,7 +348,7 @@
 
           <!-- Project 02 -->
           <a href="https://huggingface.co/spaces/Yadvendra/LLama3.1_chatbot" target="_blank" rel="noopener noreferrer"
-            class="project-row">
+            class="project-row" data-preview="images/llama_3.1_chatbot.jpg">
             <span class="p-number">02</span>
             <div class="p-title-wrap">
               <span class="p-title">LLaMA 3.1 Conversational AI</span>
@@ -361,7 +368,7 @@
 
           <!-- Project 03 -->
           <a href="https://huggingface.co/spaces/Yadvendra/Llama_doc_chat" target="_blank" rel="noopener noreferrer"
-            class="project-row">
+            class="project-row" data-preview="images/llama_doc_chat.jpg">
             <span class="p-number">03</span>
             <div class="p-title-wrap">
               <span class="p-title">LLaMA DocChat RAG Assistant</span>
@@ -381,7 +388,7 @@
 
           <!-- Project 04 -->
           <a href="https://huggingface.co/spaces/Yadvendra/Heart_Failure_pridiction" target="_blank"
-            rel="noopener noreferrer" class="project-row">
+            rel="noopener noreferrer" class="project-row" data-preview="images/heart_failure_prediction.jpg">
             <span class="p-number">04</span>
             <div class="p-title-wrap">
               <span class="p-title">Cardiovascular Risk Predictor</span>
@@ -399,7 +406,8 @@
           </a>
 
           <!-- Project 05 -->
-          <a href="https://github.com/21072002" target="_blank" rel="noopener noreferrer" class="project-row">
+          <a href="https://github.com/21072002" target="_blank" rel="noopener noreferrer" class="project-row"
+            data-preview="images/about-me.png">
             <span class="p-number">05</span>
             <div class="p-title-wrap">
               <span class="p-title">Demographic Detection & Segmentation</span>
@@ -457,6 +465,14 @@
       </div>
     </section>
   </main>
+
+  <!-- Floating Liquid Glass Project Hover Preview -->
+  <div class="floating-preview-glass" id="floatingPreview" aria-hidden="true">
+    <div class="preview-glass-inner">
+      <img src="" alt="Project Preview" id="previewImg" />
+      <div class="preview-glass-shine"></div>
+    </div>
+  </div>
 
   <!-- One-Click Copy Toast Notification -->
   <div class="copy-toast" id="copyToast" role="status" aria-live="polite">
